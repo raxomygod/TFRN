@@ -1,14 +1,13 @@
-/* COLOR: base #212529 / grey: #343a40 */
+/* COLORS: grey 9: #212529 / grey 8: #343a40 
+
+*/
 /* FONT-SIZE: 
-3.052rem/48.83px
-2.441rem/39.06px
-1.953rem/31.25px
-1.563rem/25.00px
-1.25rem/20.00px
-1rem/16.00px
-0.8rem/12.80px
-0.64rem/10.24px
-0.512rem/8.19px
+3.052rem/48.83px | 2.441rem/39.06px | 1.953rem/31.25px |1.563rem/25.00px
+1.25rem/20.00px | 1rem/16.00px | 0.8rem/12.80px | 0.64rem/10.24px | 0.512rem/8.19px
+*/
+
+/* PAGE LOGO: 
+https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80
 */
 
 * {
@@ -17,32 +16,38 @@
   box-sizing: border-box;
   list-style-position: inside; /* forces list style inside of parent container */
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 body {
   width: 960px;
-  margin: 48px auto 12px;
+  margin: 0 auto;
+  background-color: #c5f6fa;
 }
 
 /* HEADER */
 header {
-  width: 800px;
-  background-color: rgba(255, 0, 0, 0.1);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 24px 0 24px auto; /* center content */
+  margin: 0 0 24px auto; /* center content */
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.xbox-controller-img {
-  width: 300px;
-  height: auto;
+.logo {
+  width: 10em;
+  background-image: url("");
+  background-repeat: no-repeat;
+  display: block;
+  height: 80px;
+  object-fit: fill;
 }
 
 .main-nav {
   padding: 12px;
+  width: 720px;
+  background-color: rgba(255, 0, 0, 0.1);
 }
 
 .main-nav li {
@@ -87,19 +92,19 @@ header {
 }
 
 .presentation-img {
-  width: 350px;
-  align-self: center;
-  justify-self: end;
-  grid-column: 2;
-  grid-row: 1 / 3;
-  margin-right: 48px;
+  width: 95%;
+  align-self: baseline;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  /* border: 2px solid; */
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px;
 }
 /* PURCHASE CONTAINER */
 
 .purchase-container {
   display: flex;
   justify-content: space-between;
-  gap: 4px;
   width: 480px;
   grid-row: 2;
   align-self: center;
