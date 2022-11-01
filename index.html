@@ -42,60 +42,7 @@
           Eius nemo, nisi fugiat alias perferendis sapiente praesentium beatae.
         </p>
       </article>
-      <!-- PURCHASE SECTION -->
-      <section class="purchase-container">
-        <div class="purchase-infos">
-          <h3 class="purchase-title">Premium Access</h3>
 
-          <ul class="sub-infos-ul">
-            <li>Full User Experience</li>
-            <li>Unlimited Download</li>
-            <li>Improved Speed</li>
-            <li>UHD Quality</li>
-            <li>Schedulable Events</li>
-          </ul>
-        </div>
-
-        <div class="price-container">
-          <div>
-            <input
-              type="radio"
-              id="months"
-              name="subscription"
-              value=" months"
-            />
-            <label for="months" class="purchase-price"
-              >24.99$ <span class="purchase-month-span">/month</span></label
-            >
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              id="months-6"
-              name="subscription"
-              value=" months-6"
-            />
-            <label for="months-6" class="purchase-price"
-              >22.99$ <span class="purchase-month-span">/6 months</span></label
-            >
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              id="months-12"
-              name="subscription"
-              value=" months-12"
-            />
-            <label for="months-12" class="purchase-price"
-              >19.99$ <span class="purchase-month-span">/12 months</span></label
-            >
-          </div>
-        </div>
-
-        <button class="buy-now-btn"><a href="#">GET STARTED</a></button>
-      </section>
       <!-- THIS SHOULD BE A CAROUSEL -->
       <img
         src="https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
@@ -103,26 +50,78 @@
         class="presentation-img"
       />
     </section>
+    <!-- PURCHASE SECTION -->
+    <section class="purchase-container">
+      <div class="purchase-infos">
+        <h3 class="purchase-title">Premium Access</h3>
+
+        <ul class="sub-infos-ul">
+          <li>Full User Experience</li>
+          <li>Unlimited Download</li>
+          <li>Improved Speed</li>
+          <li>UHD Quality</li>
+          <li>Schedulable Events</li>
+        </ul>
+      </div>
+
+      <div class="price-container">
+        <div>
+          <input type="radio" id="months" name="subscription" value=" months" />
+          <label for="months" class="purchase-price"
+            >24.99$ <span class="purchase-month-span">/month</span></label
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="months-6"
+            name="subscription"
+            value=" months-6"
+          />
+          <label for="months-6" class="purchase-price"
+            >22.99$ <span class="purchase-month-span">/6 months</span></label
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="months-12"
+            name="subscription"
+            value=" months-12"
+          />
+          <label for="months-12" class="purchase-price"
+            >19.99$ <span class="purchase-month-span">/12 months</span></label
+          >
+        </div>
+      </div>
+
+      <button class="buy-now-btn"><a href="#">GET STARTED</a></button>
+    </section>
     <!-- PUNCH SECTION -->
     <section class="infos-container">
-      <article class="perfomance-infos-container">
-        <span
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="performance-icons faster-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z"
-            />
-          </svg>
-        </span>
-        <h3>Faster</h3>
+      <article class="performance-infos-container">
+        <div class="infos-icon-and-title">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="performance-icons faster-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z"
+              />
+            </svg>
+          </span>
+          <h3 class="punch-title">Faster</h3>
+        </div>
+
         <p class="infos-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat odit
           accusantium perferendis illo culpa quod blanditiis laboriosam magnam,
@@ -132,24 +131,26 @@
           optio nam architecto ipsum quisquam?
         </p>
       </article>
-      <article class="perfomance-infos-container">
-        <span
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="performance-icons better-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
-            />
-          </svg>
-        </span>
-        <h3>Better</h3>
+      <article class="performance-infos-container">
+        <div class="infos-icon-and-title">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="performance-icons better-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+              />
+            </svg>
+          </span>
+          <h3 class="punch-title">Better</h3>
+        </div>
         <p class="infos-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
           accusamus non rerum enim voluptatem, a eveniet. Nihil molestiae
@@ -160,24 +161,26 @@
         </p>
       </article>
 
-      <article class="perfomance-infos-container">
-        <span
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="performance-icons stronger-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
-            />
-          </svg>
-        </span>
-        <h3>Stronger</h3>
+      <section class="performance-infos-container">
+        <div class="infos-icon-and-title">
+          <span class="performance-icons stronger-icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="performance-icons stronger-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+              />
+            </svg>
+          </span>
+          <h3 class="punch-title">Stronger</h3>
+        </div>
         <p class="infos-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
           cupiditate, quisquam sequi doloremque totam possimus aliquid
@@ -186,7 +189,7 @@
           ipsa non nostrum facilis iste vel, qui, et nesciunt delectus voluptate
           eum rem neque! In porro quae soluta amet nesciunt.
         </p>
-      </article>
+      </section>
     </section>
 
     <!-- FEATURES SECTION -->
