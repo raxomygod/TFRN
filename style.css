@@ -22,7 +22,16 @@ https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&ixid
 body {
   width: 960px;
   margin: 0 auto;
-  background-color: #c5f6fa; /* MAIN BACKGROUND */
+  /* MAIN BACKGROUND */
+}
+
+.product-presentation,
+header {
+  background: #fff;
+}
+
+.product-description {
+  background-color: #c5f6fa;
 }
 
 /* HEADER */
@@ -62,6 +71,7 @@ header {
   grid-template-columns: 1.15fr 0.85fr;
   grid-template-rows: 1fr 0.5fr; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 36px;
 }
@@ -103,7 +113,7 @@ header {
 /* PURCHASE CONTAINER */
 
 .purchase-container {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 480px;
   grid-row: 2;
@@ -130,7 +140,7 @@ header {
 .sub-infos-ul {
   list-style-position: inside;
 }
-.buy-now-btn {
+.get-started-btn {
   /* border-radius: 100px; */
   background-color: #fff;
   color: green;
@@ -159,36 +169,40 @@ header {
   justify-items: center;
   /* align-items: center; */
   margin-bottom: 48px;
-  justify-content: space-between;
-  background-color: #087f5b;
-  border: 1px solid;
-  border-radius: 4px;
+  justify-content: space-around;
+  /* background-color: #087f5b; */
+  border-top: 2px solid #087f5b;
+  /* border-bottom: 1px solid; */
 }
 
 .performance-infos-container {
-  width: 33%;
+  width: 30%;
   background-color: #12b886;
   display: flex;
   flex-direction: column;
-  padding: 4px;
+  border-radius: 50%;
+  margin-top: 18px;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .performance-infos-container:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  /* border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; */
   border-right: 10px black;
 }
 
-.performance-infos-container:last-child {
+/* .performance-infos-container:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
+} */
 
 .infos-icon-and-title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 12px;
 }
 
 .punch-title {
@@ -197,8 +211,9 @@ header {
 }
 
 .infos-text {
+  width: 90%;
   font-size: 14px;
-  padding: 12px;
+  /* padding: 0 24px; */
 }
 
 .performance-icons {
