@@ -25,15 +25,6 @@ body {
   /* MAIN BACKGROUND */
 }
 
-.product-presentation,
-header {
-  background: #fff;
-}
-
-.product-description {
-  background-color: #c5f6fa;
-}
-
 /* HEADER */
 header {
   display: flex;
@@ -66,12 +57,17 @@ header {
 
 /* PRODUCT PRESENTATION */
 
+.product-description {
+  background-color: #c5f6fa;
+}
+
 .product-presentation {
   /* display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   grid-template-rows: 1fr 0.5fr; */
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   justify-content: space-between;
   margin-bottom: 36px;
 }
@@ -94,7 +90,6 @@ header {
 
 .p-presentation {
   width: 400px;
-  margin: 0;
   color: #343a40;
   font-weight: 400;
   font-size: 16px;
@@ -114,40 +109,60 @@ header {
 
 .purchase-container {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
   justify-content: space-between;
+
   width: 480px;
-  grid-row: 2;
   align-self: center;
   border-radius: 5px;
 }
 
 .purchase-infos {
-  background-color: rgba(0, 128, 0, 0.3);
+  background-color: #e3fafc;
 }
 
 .price-container {
-  background-color: rgba(0, 128, 0, 0.3);
+  background-color: #e3fafc;
+  line-height: 1.5;
 }
 
 .purchase-title {
-  /* align-self: center; */
-  justify-self: center;
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 2px;
+  text-align: center;
+  margin-top: 12px;
 }
 
 .sub-infos-ul {
   list-style-position: inside;
+  list-style-type: none;
 }
+
+.sub-infos-ul li {
+  line-height: 2;
+}
+
 .get-started-btn {
   /* border-radius: 100px; */
+  width: 480px;
   background-color: #fff;
   color: green;
   font-weight: 700;
   padding: 4px;
   border-bottom-right-radius: 5px;
   /* justify-self: center; */
+}
+
+.get-started-btn:link,
+.get-started-btn:visited {
+}
+
+.get-started-btn:focus,
+.get-started-btn:hover {
+  color: pink;
 }
 
 .purchase-price {
@@ -158,6 +173,11 @@ header {
   color: #343a40;
   font-size: 16px;
   font-weight: 400;
+}
+
+.check-icon {
+  width: 25px;
+  color: #248a4b;
 }
 
 /* INFOS CONTAINER */
@@ -177,10 +197,10 @@ header {
 
 .performance-infos-container {
   width: 30%;
-  background-color: #12b886;
+  /* background-color: #12b886; */
   display: flex;
   flex-direction: column;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-top: 18px;
   justify-content: center;
   align-items: center;
@@ -189,20 +209,18 @@ header {
 }
 
 .performance-infos-container:first-child {
-  /* border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; */
-  border-right: 10px black;
+  border-right: 1px solid #087f5b;
 }
 
-/* .performance-infos-container:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-} */
+.performance-infos-container:last-child {
+  border-left: 1px solid #087f5b;
+}
 
 .infos-icon-and-title {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  margin-bottom: 18px;
+  align-items: center;
 }
 
 .punch-title {
@@ -211,15 +229,14 @@ header {
 }
 
 .infos-text {
-  width: 90%;
   font-size: 14px;
-  /* padding: 0 24px; */
+  padding: 0 24px;
 }
 
 .performance-icons {
-  width: 25px;
-  height: auto;
+  width: 30px;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
 .faster-icon {
