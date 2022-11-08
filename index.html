@@ -38,9 +38,11 @@
           assumenda, cupiditate nobis repellendus quam id ad labore. Repellat
           aperiam laboriosam culpa amet, perferendis sunt fuga dignissimos
           veniam saepe voluptates suscipit, cupiditate ex esse maxime modi eaque
-          architecto. Quasi, nihil similique! Molestiae at recusandae sapiente.
-          Eius nemo, nisi fugiat alias perferendis sapiente praesentium beatae.
+          architecto.
+          <!-- Quasi, nihil similique! Molestiae at recusandae sapiente.
+          Eius nemo, nisi fugiat alias perferendis sapiente praesentium beatae. -->
         </p>
+        <button class="get-started-btn">GET STARTED</button>
       </article>
       <!-- THIS SHOULD BE A CAROUSEL -->
       <img
@@ -48,141 +50,158 @@
         alt="welcome to the future"
         class="presentation-img"
       />
-      <!-- PURCHASE SECTION -->
-      <button class="get-started-btn">
-        <a href="#">GET STARTED</a>
-      </button>
-      <section class="purchase-container">
-        <div class="purchase-infos">
-          <h3 class="purchase-title">Premium Access</h3>
+      <!-- PURCHASE BUTTON -->
+    </section>
+    <!-- PURCHASE SECTION (hidden)-->
+    <section class="purchase-container">
+      <div class="purchase-infos">
+        <button class="purchase-container-close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="purchase-container-close-btn-svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
 
-          <ul class="sub-infos-ul">
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="check-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              <span>Full User Experience</span>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="check-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              Unlimited Download
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="check-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              Improved Speed
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="check-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              UHD Quality
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="check-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 12.75l6 6 9-13.5"
-                />
-              </svg>
-              Schedulable Events
-            </li>
-          </ul>
+        <h3 class="purchase-title">Premium Access</h3>
+
+        <ul class="sub-infos-ul">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="check-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+              />
+            </svg>
+            <span>Full User Experience</span>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="check-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+              />
+            </svg>
+            Unlimited Download
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="check-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+              />
+            </svg>
+            Improved Speed
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="check-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+              />
+            </svg>
+            UHD Quality
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="check-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+              />
+            </svg>
+            Schedulable Events
+          </li>
+        </ul>
+      </div>
+
+      <div class="price-container">
+        <div>
+          <input
+            type="radio"
+            id="month"
+            name="subscription"
+            value=" month"
+            class="month"
+          />
+          <label for="month" class="purchase-price"
+            >24.99$ <span class="purchase-month-span">/month</span></label
+          >
         </div>
 
-        <div class="price-container">
-          <div>
-            <input
-              type="radio"
-              id="months"
-              name="subscription"
-              value=" months"
-            />
-            <label for="months" class="purchase-price"
-              >24.99$ <span class="purchase-month-span">/month</span></label
-            >
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              id="months-6"
-              name="subscription"
-              value=" months-6"
-            />
-            <label for="months-6" class="purchase-price"
-              >22.99$ <span class="purchase-month-span">/6 months</span></label
-            >
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              id="months-12"
-              name="subscription"
-              value=" months-12"
-            />
-            <label for="months-12" class="purchase-price"
-              >19.99$ <span class="purchase-month-span">/12 months</span></label
-            >
-          </div>
+        <div>
+          <input
+            type="radio"
+            id="months-6"
+            name="subscription"
+            value="months-6"
+          />
+          <label for="months-6" class="purchase-price"
+            >22.99$ <span class="purchase-month-span">/6 months</span></label
+          >
         </div>
-      </section>
+
+        <div>
+          <input
+            type="radio"
+            id="months-12"
+            name="subscription"
+            value=" months-12"
+          />
+          <label for="months-12" class="purchase-price"
+            >19.99$ <span class="purchase-month-span">/12 months</span></label
+          >
+        </div>
+      </div>
+      <button class="purchase-btn">PURCHASE</button>
     </section>
 
     <div class="product-description">
@@ -269,55 +288,92 @@
         </section>
       </section>
 
-      <!-- FEATURES SECTION -->
-      <section class="features-container">
-        <ul>
-          <li>
-            <span>Feature 1</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id
-              culpa quas ratione sequi aliquam expedita aut? Corrupti fugit ab,
-              enim voluptatem veritatis cumque dolorum earum animi distinctio
-              accusamus sunt!
-            </p>
-          </li>
-          <li>
-            <span>Feature 2</span>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-              in. Beatae voluptatum voluptas sit sapiente vero, accusantium
-              deleniti itaque, numquam facere quia, ea minima cumque? Beatae
-              vero saepe cum autem fuga rem, esse animi?
-            </p>
-          </li>
-          <li>
-            <span>Feature 3</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              illum, nobis nisi asperiores porro eius maxime officiis,
-              recusandae voluptate fugit, suscipit accusamus.
-            </p>
-          </li>
-        </ul>
+      <!-- TESTIMONIAL SECTION-->
+      <section class="testimonial-container">
+        <h2 clas="testimonial-title">Some reviews from our customers</h2>
+        <div class="testimonial">
+          <img
+            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+            alt="profil picture"
+            class="profile-picture-testimonial"
+          />
+
+          <div class="customer-infos">
+            <span class="testimonial-customer-name">Berry M.</span>
+          </div>
+          <p>
+            "No matter where you go, lightshot suit is the coolest, most
+            happening thing around! I don't always clop, but when I do, it's
+            because of lightshot suit. I am so pleased with this product."
+          </p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+            alt="profil picture"
+            class="profile-picture-testimonial"
+          />
+          <div class="customer-infos">
+            <span class="testimonial-customer-name">Codie D.</span>
+          </div>
+
+          <p>
+            "LightShot Suit should be nominated for service of the year. Your
+            company is truly upstanding and is behind its product 100%."
+          </p>
+        </div>
+        <div class="testimonial">
+          <img
+            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+            alt="profil picture"
+            class="profile-picture-testimonial"
+          />
+          <div class="customer-infos">
+            <span class="testimonial-customer-name">Owen T.</span>
+          </div>
+
+          <p>
+            "LightShot Suit is the most valuable business resource we have EVER
+            purchased. No matter where you go, LightShot Suit is the coolest,
+            most happening thing around! If you want real marketing that works
+            and effective implementation - LightShot Suit's got you covered."
+          </p>
+        </div>
       </section>
 
-      <section class="preview-container">
+      <!-- FEATURES SECTION -->
+      <section class="features-container">
+        <div class="feature">
+          <span>Feature 1</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id
+            culpa quas ratione sequi aliquam expedita aut? Corrupti fugit ab,
+            enim voluptatem veritatis cumque dolorum earum animi distinctio
+            accusamus sunt!
+          </p>
+        </div>
         <img
           src="https://images.unsplash.com/photo-1634658340808-9abaef7eb9a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
           alt="future soldier running"
-          class="preview-img"
+          class="feature feature-1-preview-img"
         />
+        <div class="feature">
+          <span>Feature 2</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in.
+            Beatae voluptatum voluptas sit sapiente vero, accusantium deleniti
+            itaque, numquam facere quia, ea minima cumque? Beatae vero saepe cum
+            autem fuga rem, esse animi?
+          </p>
+        </div>
         <img
-          src="https://images.unsplash.com/photo-1634658340808-9abaef7eb9a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-          alt="future soldier running"
-          class="preview-img"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1634658340808-9abaef7eb9a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-          alt="future soldier running"
-          class="preview-img"
+          src="https://images.unsplash.com/photo-1634634120836-2e9581aba554?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+          alt="orbs"
+          class="feature feature-2-preview-img"
         />
       </section>
     </div>
+    <footer>&#169; All rights may be reserved.</footer>
   </body>
 </html>
