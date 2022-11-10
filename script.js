@@ -31,3 +31,10 @@ purchaseBtn[0].addEventListener("click", () => {
     userMonthSelection = 12;
   }
 });
+
+const showFeaturesChevron = document.getElementsByClassName(
+  ".chevron-double-down"
+);
+const featuresContainer = document.getElementsByClassName("features-container");
+
+showFeaturesChevron[0].addEventListener("click", () => {});
