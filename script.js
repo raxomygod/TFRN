@@ -32,9 +32,33 @@ purchaseBtn[0].addEventListener("click", () => {
   }
 });
 
-const showFeaturesChevron = document.getElementsByClassName(
-  ".chevron-double-down"
+const showFeaturesBtn = document.getElementsByClassName(
+  "chevron-double-down-btn"
 );
+const chevronDown = document.getElementsByClassName("chevron-down");
+const chevronUp = document.getElementsByClassName("chevron-up");
+const downBtn = document.getElementsByClassName("down-btn");
+const upBtn = document.getElementsByClassName("up-btn");
 const featuresContainer = document.getElementsByClassName("features-container");
+const productMainContainer = document.getElementsByClassName(
+  "product-main-container"
+);
 
-showFeaturesChevron[0].addEventListener("click", () => {});
+chevronDown[0].addEventListener("click", () => {
+  // upBtn[0].style.display = "flex";
+  // downBtn[0].style.display = "none";
+  chevronUp[0].style.display = "block";
+  chevronDown[0].style.display = "none";
+  featuresContainer[0].style.display = "flex";
+  featuresContainer[0].style.flexDirection = "column";
+  productMainContainer[0].style.marginBottom = "0";
+});
+
+chevronUp[0].addEventListener("click", () => {
+  // downBtn[0].style.display = "flex";
+  // upBtn[0].style.display = "none";
+  chevronDown[0].style.display = "block";
+  chevronUp[0].style.display = "none";
+  featuresContainer[0].style.display = "none";
+  productMainContainer[0].style.marginBottom = "48px";
+});
